@@ -1,0 +1,27 @@
+{
+  "name": "@nodejs/mvc",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "type": "module",
+  "license": "GNU GPL v3",
+  "scripts": {
+    "test": "nyc mocha ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfusiontech/dft-nodejs-mvc"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./submodule": "./src/submodule.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^7.0.0",
+    "nyc": "^15.0.0",
+    "sinon": "^8.0.4"
+  }
+}
